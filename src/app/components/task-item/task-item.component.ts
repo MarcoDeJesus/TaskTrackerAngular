@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { TASKS } from 'src/app/mock-tasks';
 import { Task } from 'src/app/Task';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-task-item',
@@ -14,6 +15,8 @@ export class TaskItemComponent implements OnInit {
                       day: "string",
                       reminder: true,
                   };
+
+  faTimes = faTimes;
 
   constructor() { }
 
